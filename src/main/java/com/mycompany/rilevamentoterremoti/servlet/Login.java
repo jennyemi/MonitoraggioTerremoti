@@ -13,6 +13,7 @@ import com.mycompany.rilevamentoterremoti.entity.Utente;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.Optional;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -24,34 +25,40 @@ import javax.servlet.http.HttpSession;
  * @author Jennifer
  */
 public class Login extends HttpServlet {
-@Override
+
+    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        Utente u = UtenteDAO.findUtentebyUsername(username);
-        
-        String salt = u.getSalt();
-
-        String passwordEncrypted = password + salt;
-
-        Hasher hasher = Hashing.sha256().newHasher();
-        hasher.putString(passwordEncrypted, Charsets.UTF_8);
-        String sha256 = hasher.hash().toString();
-
-        if (sha256.equals(u.getPassword())) {
-
-            HttpSession session = request.getSession();
-            session.setAttribute("username", u.getUsername());
+        List<Utente> userList = UtenteDAO.findUtentebyUsername(username);
+        if (userList.size() != 0) {
             
-            request.setCharacterEncoding("UTF-8");
-            
-            request.getRequestDispatcher("index.html").forward(request, response);
+            Utente u = userList.get(0);
+            String salt = u.getSalt();
 
+            String passwordEncrypted = password + salt;
+
+            Hasher hasher = Hashing.sha256().newHasher();
+            hasher.putString(passwordEncrypted, Charsets.UTF_8);
+            String sha256 = hasher.hash().toString();
+
+            if (sha256.equals(u.getPassword())) {
+
+                HttpSession session = request.getSession();
+                session.setAttribute("username", u.getUsername());
+
+                request.setCharacterEncoding("UTF-8");
+
+                request.getRequestDispatcher("index.html").forward(request, response);
+
+            } else {
+
+                request.getRequestDispatcher("accessoNegato.html").forward(request, response);
+            }
         } else {
-
             request.getRequestDispatcher("accessoNegato.html").forward(request, response);
         }
 

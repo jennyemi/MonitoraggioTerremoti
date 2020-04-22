@@ -9,6 +9,7 @@ import com.mycompany.rilevamentoterremoti.DAO.exceptions.NonexistentEntityExcept
 import com.mycompany.rilevamentoterremoti.entity.Utente;
 import java.io.Serializable;
 import java.util.List;
+import java.util.Optional;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
@@ -120,11 +121,11 @@ public class UtenteDAO implements Serializable {
         }
     }
     
-public static Utente findUtentebyUsername(String username){
+public static List<Utente> findUtentebyUsername(String username){
     EntityManager em = getEntityManager();
-    Utente utente = (Utente) em.createQuery("SELECT utn FROM Utente utn WHERE utn.username LIKE :username")
-            .setParameter("username", username).getSingleResult();
-    return utente;
+    List<Utente> utente = em.createQuery("SELECT utn FROM Utente utn WHERE utn.username LIKE :username")
+            .setParameter("username", username).getResultList();
+        return utente;
     }
 
 
