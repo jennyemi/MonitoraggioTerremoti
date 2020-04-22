@@ -1,0 +1,14 @@
+Wed Apr 22 15:20:36 CEST 2020 : Apache Derby Server di rete: 10.8.3.2 - (1557835) avviato e pronto ad accettare connessioni sulla porta 1527
+----------------------------------------------------------------
+Wed Apr 22 15:20:37 CEST 2020:
+Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.8.3.2 - (1557835): istanza a816c00e-0171-a20c-20d1-0000796d2f05
+su directory database C:\Users\Eugenia\Desktop\RilevamentoTerremoti\database\rilevamentoTerremoti  con caricatore classi jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a 
+
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.6+8-LTS
+user.dir=C:\Program Files\Java\jdk1.7.0_80\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Eugenia\Desktop\RilevamentoTerremoti\database
+Programma di caricamento classe database avviato - derby.database.classpath=''
