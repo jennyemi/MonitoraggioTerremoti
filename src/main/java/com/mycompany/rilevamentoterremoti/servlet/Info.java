@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Jennifer
  */
-public class Logout extends HttpServlet {
+public class Info extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
