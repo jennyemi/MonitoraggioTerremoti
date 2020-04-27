@@ -57,7 +57,9 @@
         </nav>
         <ul>
             <img src="1.jpg" height="175px" width="175px" style="border-radius: 100%; border:10px solid #fff;"></img>
+            <!--
             <button type="submit" class="btn-custom-due" onclick="location.href = 'profilo.html'">Modifica Profilo</button>
+            -->
             <br>
             <form action="Logout">
                 <button type="submit" class="btn-custom"">Logout</button>

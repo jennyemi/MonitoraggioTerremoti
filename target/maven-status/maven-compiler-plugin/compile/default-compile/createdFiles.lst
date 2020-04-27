@@ -22,4 +22,5 @@ com\mycompany\rilevamentoterremoti\DAO\exceptions\PreexistingEntityException.cla
 com\mycompany\rilevamentoterremoti\DAO\RilevazioneDAO.class
 com\mycompany\rilevamentoterremoti\servlet\Dati.class
 com\mycompany\rilevamentoterremoti\DAO\SismografoDAO.class
+com\mycompany\rilevamentoterremoti\servlet\Info.class
 com\mycompany\rilevamentoterremoti\servlet\Registration.class
