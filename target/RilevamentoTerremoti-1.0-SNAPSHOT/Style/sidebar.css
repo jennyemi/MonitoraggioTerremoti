@@ -1,0 +1,64 @@
+ .lateral {
+    position: fixed;
+    top: 30%;
+  }
+  
+  .lateral ul {
+    list-style-type: none;
+    padding: 0;
+    transform: translatex(-270px);
+  }
+  
+  .lateral ul li {
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+  }
+  
+  .lateral ul li:hover {
+    transform: translatex(110px);
+  }
+  
+  .lateral ul li.azul:hover {
+    background-color: #00f6ed;
+  }
+  
+  .lateral ul li.blue:hover {
+    background-color: #3b5999;
+  }
+  
+  .lateral ul li.rojo:hover {
+    background-color: #dd4b39;
+  }
+  
+  .lateral ul li.magenta:hover {
+    background-color: #e4405f;
+  }
+  
+  .lateral ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .lateral ul li i {
+    text-align: center;
+    margin-left: 14px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    transform: rotate(0deg);
+  }
+  
+  .lateral ul li:hover i {
+    transform: rotate(360deg);
+    transition: all 1s;
+  }

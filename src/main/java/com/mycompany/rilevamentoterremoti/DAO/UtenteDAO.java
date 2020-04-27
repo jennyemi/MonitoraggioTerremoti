@@ -120,14 +120,15 @@ public class UtenteDAO implements Serializable {
             em.close();
         }
     }
-    
-public static List<Utente> findUtentebyUsername(String username){
-    EntityManager em = getEntityManager();
-    List<Utente> utente = em.createQuery("SELECT utn FROM Utente utn WHERE utn.username LIKE :username")
-            .setParameter("username", username).getResultList();
+
+    public static List<Utente> findUtentebyUsername(String username) {
+        EntityManager em = getEntityManager();
+        List<Utente> utente = em.createQuery("SELECT utn FROM Utente utn WHERE utn.username LIKE :username")
+                .setParameter("username", username).getResultList();
         return utente;
     }
-
+    
+    
 
     public static int getUtenteCount() {
         EntityManager em = getEntityManager();
@@ -141,5 +142,5 @@ public static List<Utente> findUtentebyUsername(String username){
             em.close();
         }
     }
-    
+
 }

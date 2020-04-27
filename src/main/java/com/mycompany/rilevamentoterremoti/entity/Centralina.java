@@ -24,10 +24,6 @@ public class Centralina implements Serializable {
     @Id
     private long id;
     
-    @Basic
-    @Column(nullable = false)
-    private String località;
-    
     @ManyToOne(targetEntity = PuntoDiRilevamento.class)
     private PuntoDiRilevamento puntoDiRilevamento;
 
@@ -39,13 +35,6 @@ public class Centralina implements Serializable {
         this.id = id;
     }
 
-    public String getLocalità() {
-        return località;
-    }
-
-    public void setLocalità(String località) {
-        this.località = località;
-    }
 
     public PuntoDiRilevamento getPuntoDiRilevamento() {
         return puntoDiRilevamento;

@@ -39,7 +39,7 @@ public class Utente implements Serializable {
     @Basic
     @Column(nullable = false)
     private String permissions;
-
+    
     @Basic
     @Column(nullable = true)
     private String sesso;

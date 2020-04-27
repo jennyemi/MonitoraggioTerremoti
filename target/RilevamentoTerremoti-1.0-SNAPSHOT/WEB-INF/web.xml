@@ -8,6 +8,30 @@
         <servlet-name>Registration</servlet-name>
         <servlet-class>com.mycompany.rilevamentoterremoti.servlet.Registration</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TableUpdate</servlet-name>
+        <servlet-class>com.mycompany.rilevamentoterremoti.servlet.TableUpdate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.mycompany.rilevamentoterremoti.servlet.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dati</servlet-name>
+        <servlet-class>com.mycompany.rilevamentoterremoti.servlet.Dati</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InserimentoDati</servlet-name>
+        <servlet-class>com.mycompany.rilevamentoterremoti.servlet.InserimentoDati</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Menu</servlet-name>
+        <servlet-class>com.mycompany.rilevamentoterremoti.servlet.Menu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Info</servlet-name>
+        <servlet-class>com.mycompany.rilevamentoterremoti.servlet.Info</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -15,6 +39,30 @@
     <servlet-mapping>
         <servlet-name>Registration</servlet-name>
         <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TableUpdate</servlet-name>
+        <url-pattern>/TableUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Dati</servlet-name>
+        <url-pattern>/Dati</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InserimentoDati</servlet-name>
+        <url-pattern>/InserimentoDati</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Menu</servlet-name>
+        <url-pattern>/Menu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Info</servlet-name>
+        <url-pattern>/Info</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

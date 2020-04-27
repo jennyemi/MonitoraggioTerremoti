@@ -23,26 +23,39 @@ import javax.persistence.TemporalType;
  */
 @Entity
 public class Rilevazione implements Serializable {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
+
     @Temporal(TemporalType.TIMESTAMP)
     @Column(nullable = false)
     private Date dataOra;
-    
+
     @Basic
     @Column(nullable = false)
     private float magnitudo;
-    
+
+    @Basic
+    @Column(nullable = false)
+    private String località;
+        
     @Basic
     @Column(nullable = false)
     private int profondità;
 
     @ManyToOne(targetEntity = Sismografo.class)
     private Sismografo sismografo;
+
+    public String getLocalità() {
+        return località;
+    }
+
+    public void setLocalità(String località) {
+        this.località = località;
+    }
     
+
     public long getId() {
         return id;
     }
@@ -82,6 +95,5 @@ public class Rilevazione implements Serializable {
     public void setSismografo(Sismografo sismografo) {
         this.sismografo = sismografo;
     }
-    
-    
+
 }

@@ -1,48 +1,136 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-body{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: #e6e6ff;
-    color:#85929e;
-}
-.titolo {
-    padding: 2rem 1rem;
-    background-color: #e6e6ff;
-    color: #85929e;
-}
-.login-container{
-    height: 100vh;
-    width: 100%;
-}
-.login-form{
-    margin: auto;
-    width: 370px;
-    padding: 15px;
-    max-width: 100%;
-    background-color: #f5f4ff;
-    border-radius: 25px;
-    padding: 30px;
-}
-.login-form .form-control{
-    font-size: 15px;
-    min-height: 48px;
-    font-weight: 500;
-}
-.login-form a{
-    text-decoration: none;
-    color:#85929e;
-}
-.login-form a:hover{
-    color:#34495e;
-}
-.forgot-link{
-    font-size: 13px;
+* {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+        "sans-serif";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.form-control:focus{
-    border-color:#34495e;
-    box-shadow: 0 0 0 0.2rem rgb(81, 116, 148);
+.menuTendina {
+    color: #85929e;
 }
+
+.hidden {
+    overflow: hidden;
+}
+
+html, body {
+    color: #222426;
+    background: #f5f4ff;
+}
+
+
+
+.nav {
+    width: 90%;
+    height: 90px;
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #517494;
+}
+
+.nav ~ ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 1%;
+    right: 1%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    list-style: none;
+    transition: 0s;
+}
+
+.nav ~ ul > li {
+    color: #00f6ed;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav ~ ul > li:hover {
+    filter: brightness(500%);
+}
+
+.nav.open ~ ul {
+    transition: 0.75s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+#drop {
+    cursor: pointer;
+    position: fixed;
+    background-color: #222426;
+    width: 70px;
+    height: 70px;
+    border-radius: 0 50% 50%;
+    transform: rotate(45deg);
+    transition: border-radius 0.5s;
+}
+
+.nav.open > #drop{
+    transition: 0.75s ease-in-out;
+    box-shadow: 0 0 0 15000px #222426, inset 0 0 0 20px #222426;
+    position: relative;
+}
+
+#drop.active {
+    border-radius: 50%;
+    animation: drop 0.3s forwards;
+}
+
+#drop > div {
+    transform: rotate(-45deg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#drop span {
+    display: block;
+    background-color: #00f6ed;
+    width: 40px;
+    height: 3px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+#drop span.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#drop span.open:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#drop span.open:nth-child(3) {
+    opacity: 0;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0) rotate(45deg);
+    }
+    50% {
+        transform: translateY(30px) rotate(45deg);
+    }
+    100% {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
 .btn-custom{
     background: #517494;
     border-color:#517494;
@@ -50,21 +138,63 @@ body{
     font-size: 15px;
     font-weight: 600;
     min-height: 48px;
+    border-radius: 30px;
+    padding: 10px 120px;
 }
+
 .btn-custom:focus,
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:active:focus{
-    background: #34495e;
-    border-color: #34495e;
-    color:#fff;
+  background: #34495e;
+  border-color: #34495e;
+  color:#fff;
 }
 .btn-custom:focus{
-    box-shadow: 0 0 0 0.2rem rgb(81, 116, 148);
+  box-shadow: 0 0 0 0.2rem rgb(81, 116, 148);
 }
 
-.textarea-rounded{
-    border-radius: 20px;
+.btn-custom-due{
+    background: #517494;
+    border-color:#517494;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+    border-radius: 30px;
+    padding: 10px 82px;
 }
 
+.btn-custom-due:focus,
+.btn-custom-due:hover,
+.btn-custom-due:active,
+.btn-custom-due:active:focus{
+  background: #34495e;
+  border-color: #34495e;
+  color:#fff;
+}
+.btn-custom-due:focus{
+  box-shadow: 0 0 0 0.2rem rgb(81, 116, 148);
+}
+.btn-tab{
+    background: #517494;
+    border-color:#517494;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+    border-radius: 30px;
+    padding: 10px 10px;
+}
 
+.btn-tab:focus,
+.btn-tab:hover,
+.btn-tab:active,
+.btn-tab:active:focus{
+  background: #34495e;
+  border-color: #34495e;
+  color:#fff;
+}
+.btn-tab:focus{
+  box-shadow: 0 0 0 0.2rem rgb(81, 116, 148);
+}

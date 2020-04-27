@@ -52,7 +52,7 @@ public class Login extends HttpServlet {
 
                 request.setCharacterEncoding("UTF-8");
 
-                request.getRequestDispatcher("index.html").forward(request, response);
+                request.getRequestDispatcher("home.jsp").forward(request, response);
 
             } else {
 

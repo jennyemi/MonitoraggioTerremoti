@@ -1,15 +1,19 @@
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\entity\Rilevazione.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\exceptions\IllegalOrphanException.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\SismografoDAO.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\servlet\Login.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\RilevazioneDAO.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\entity\Sismografo.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\CentralinaDAO.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\exceptions\NonexistentEntityException.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\entity\PuntoDiRilevamento.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\UtenteDAO.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\exceptions\PreexistingEntityException.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\entity\Utente.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\servlet\Registration.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\entity\Centralina.java
-C:\Users\Eugenia\Desktop\RilevamentoTerremoti\src\main\java\com\mycompany\rilevamentoterremoti\DAO\PuntoDiRilevamentoDAO.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\PuntoDiRilevamentoDAO.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\entity\Utente.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\servlet\InserimentoDati.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\UtenteDAO.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\entity\Sismografo.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\servlet\TableUpdate.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\servlet\Login.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\servlet\Dati.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\entity\Rilevazione.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\CentralinaDAO.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\exceptions\NonexistentEntityException.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\exceptions\PreexistingEntityException.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\RilevazioneDAO.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\servlet\Logout.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\entity\Centralina.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\SismografoDAO.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\DAO\exceptions\IllegalOrphanException.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\servlet\Registration.java
+C:\Users\Eugenia\Desktop\RilevamentoTerremoti - Copia\src\main\java\com\mycompany\rilevamentoterremoti\entity\PuntoDiRilevamento.java

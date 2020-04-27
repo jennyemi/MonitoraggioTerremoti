@@ -54,11 +54,15 @@ public class Registration extends HttpServlet {
         u.setUsername(username);
         u.setPassword(sha256);
         u.setSalt(salt);
-        u.setPermissions("user");
+        if (username.equals("admin")) {
+            u.setPermissions("admin");
+        } else {
+            u.setPermissions("user");
+        }
 
         UtenteDAO.create(u);
 
-        request.getRequestDispatcher("home.html").forward(request, response);
+        request.getRequestDispatcher("index.html").forward(request, response);
 
     }
 }

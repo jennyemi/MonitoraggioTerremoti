@@ -27,5 +27,5 @@ public class PuntoDiRilevamento implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
-    
+
 }

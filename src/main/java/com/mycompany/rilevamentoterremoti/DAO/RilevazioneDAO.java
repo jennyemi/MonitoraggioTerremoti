@@ -5,8 +5,10 @@
  */
 package com.mycompany.rilevamentoterremoti.DAO;
 
+import static com.mycompany.rilevamentoterremoti.DAO.UtenteDAO.getEntityManager;
 import com.mycompany.rilevamentoterremoti.DAO.exceptions.NonexistentEntityException;
 import com.mycompany.rilevamentoterremoti.entity.Rilevazione;
+import com.mycompany.rilevamentoterremoti.entity.Utente;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -120,6 +122,36 @@ public class RilevazioneDAO implements Serializable {
         }
     }
 
+    public static List<Rilevazione> findRilevazionebyDate(String data) {
+        EntityManager em = getEntityManager();
+        List<Rilevazione> l_rilevazione = em.createQuery("SELECT data FROM Rilevazione r WHERE r.dataOra LIKE :data")
+                .setParameter("data", data).getResultList();
+        return l_rilevazione;
+    }
+
+    public static List<Rilevazione> findRilevazionebyLocalita(String localita) {
+        EntityManager em = getEntityManager();
+        List<Rilevazione> l_rilevazione = em.createQuery("SELECT località FROM Rilevazione r WHERE r.località LIKE '%Italia%'")
+                .setParameter("localita", localita).getResultList();
+        return l_rilevazione;
+    }
+
+    public static List<Rilevazione> findRilevazionebyMagnitudo(String magni) {
+        EntityManager em = getEntityManager();
+        Float magnitudo = Float.parseFloat(magni);
+        List<Rilevazione> l_rilevazione = em.createQuery("SELECT magnitudo FROM Rilevazione r WHERE r.magnitudo > 3")
+                .setParameter("magnitudo", magnitudo).getResultList();
+        return l_rilevazione;
+    }
+
+    public static List<Rilevazione> findRilevazionebyProfondita(String prof) {
+        EntityManager em = getEntityManager();
+        int profondita = Integer.parseInt(prof);
+        List<Rilevazione> l_rilevazione = em.createQuery("SELECT profondità FROM Rilevazione r WHERE r.profondità LIKE :profondita")
+                .setParameter("profondita", profondita).getResultList();
+        return l_rilevazione;
+    }
+
     public static int getRilevazioneCount() {
         EntityManager em = getEntityManager();
         try {
@@ -132,5 +164,5 @@ public class RilevazioneDAO implements Serializable {
             em.close();
         }
     }
-    
+
 }
